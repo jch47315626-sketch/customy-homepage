@@ -1,0 +1,9 @@
+// Cloudflare Workers(정적 자산) 배포 설정 — 빌드 결과물 out/ 을 그대로 서빙
+{
+  "name": "customy-homepage",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}

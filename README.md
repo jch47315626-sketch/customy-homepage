@@ -23,16 +23,22 @@ npm run build    # out/ 에 정적 사이트 생성 (어떤 정적 호스팅에�
 - `public/brand/` — 로고, 마스코트
 - `public/wonso/` — 원소연희 상세페이지에서 잘라낸 이미지
 
-## 배포 (Cloudflare Pages)
+## 배포 (Cloudflare)
 
-`main` 브랜치에 푸시하면 Cloudflare Pages가 자동으로 빌드·배포한다.
+`main` 브랜치에 푸시하면 Cloudflare가 자동으로 빌드·배포한다. Node 버전은 `.node-version`(22), 응답 헤더는 `public/_headers`.
+
+**Workers 방식** (대시보드 Create app → Git 저장소 가져오기, 현재 기본)
 
 | 설정 | 값 |
 |---|---|
-| Framework preset | None (또는 Next.js (Static HTML Export)) |
+| 프로젝트 이름 | `customy-homepage` (`wrangler.jsonc`의 `name`과 같아야 함) |
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy` |
+
+**Pages 방식**
+
+| 설정 | 값 |
+|---|---|
+| Framework preset | None |
 | Build command | `npm run build` |
 | Build output directory | `out` |
-| Node 버전 | `.node-version` 파일(22)로 지정 |
-
-- `public/_headers`: 캐시·보안 헤더
-- 다른 브랜치에 푸시하면 미리보기 주소가 따로 생긴다.
