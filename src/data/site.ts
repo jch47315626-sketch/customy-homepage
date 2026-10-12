@@ -7,6 +7,13 @@ export const site = {
   description:
     "커스토미(Customy)는 앱 · 보드게임 · 교육 게임을 만드는 회사입니다. 재미가 먼저, 배움은 자연스럽게.",
   email: "jch47315626@gmail.com",
+  // 사업자등록증 기준 사업자 정보 (푸터 하단 표기)
+  business: {
+    name: "커스토미",
+    ceo: "정찬희",
+    regNo: "405-27-02253",
+    address: "강원특별자치도 원주시 동부순환로 261, 4층 4호 A52(행구동)",
+  },
 };
 
 export const nav = [

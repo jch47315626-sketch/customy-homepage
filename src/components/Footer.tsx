@@ -46,9 +46,20 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-6xl px-4 py-5 text-xs text-white/50 sm:px-6">
-          © 2026 {site.name} {site.nameEn}. All rights reserved.
-        </p>
+        <div className="mx-auto max-w-6xl space-y-1.5 px-4 py-6 text-xs leading-relaxed text-white/50 sm:px-6">
+          <p className="flex flex-wrap gap-x-3 gap-y-1">
+            <span>상호 {site.business.name}</span>
+            <span>대표 {site.business.ceo}</span>
+            <span>사업자등록번호 {site.business.regNo}</span>
+          </p>
+          <p className="flex flex-wrap gap-x-3 gap-y-1">
+            <span>주소 {site.business.address}</span>
+            <span>문의 {site.email}</span>
+          </p>
+          <p className="pt-2">
+            © 2026 {site.name} {site.nameEn}. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
