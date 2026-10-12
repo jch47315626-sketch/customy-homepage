@@ -1,0 +1,8 @@
+# Cloudflare Pages 응답 헤더
+# 빌드마다 파일명이 바뀌는 Next.js 정적 파일은 오래 캐시
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

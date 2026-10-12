@@ -22,3 +22,17 @@ npm run build    # out/ 에 정적 사이트 생성 (어떤 정적 호스팅에�
 - `src/data/` — 사이트·프로젝트 문구
 - `public/brand/` — 로고, 마스코트
 - `public/wonso/` — 원소연희 상세페이지에서 잘라낸 이미지
+
+## 배포 (Cloudflare Pages)
+
+`main` 브랜치에 푸시하면 Cloudflare Pages가 자동으로 빌드·배포한다.
+
+| 설정 | 값 |
+|---|---|
+| Framework preset | None (또는 Next.js (Static HTML Export)) |
+| Build command | `npm run build` |
+| Build output directory | `out` |
+| Node 버전 | `.node-version` 파일(22)로 지정 |
+
+- `public/_headers`: 캐시·보안 헤더
+- 다른 브랜치에 푸시하면 미리보기 주소가 따로 생긴다.
