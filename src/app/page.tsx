@@ -4,6 +4,7 @@ import { DiceIcon, PuzzleIcon, StarIcon, TabletIcon } from "@/components/Icons";
 import Plant from "@/components/Plant";
 import ProjectCards from "@/components/ProjectCards";
 import Section from "@/components/Section";
+import { site } from "@/data/site";
 
 const makes = [
   {
@@ -142,6 +143,12 @@ export default function Home() {
           상자를 열면, 새로운 놀이가 자라나요
         </h2>
         <p className="mt-4 text-lg text-navy-soft">커스토미의 다음 게임도 곧 소개할게요.</p>
+        <p className="mt-6 text-navy-soft">
+          문의{" "}
+          <a href={`mailto:${site.email}`} className="font-bold text-navy underline decoration-yellow decoration-4 underline-offset-4">
+            {site.email}
+          </a>
+        </p>
       </section>
     </>
   );

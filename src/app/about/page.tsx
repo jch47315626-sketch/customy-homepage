@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { DiceIcon, PuzzleIcon, TabletIcon } from "@/components/Icons";
 import Section from "@/components/Section";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "소개",
@@ -73,6 +74,21 @@ export default function AboutPage() {
         <p className="mt-4 text-lg leading-relaxed text-navy-soft">
           커스토미의 게임을 만난 모든 사람이 조금씩 자라기를 바라요.
         </p>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pt-20 sm:px-6">
+        <div className="sticker flex flex-col items-center gap-5 bg-blue-soft px-6 py-10 text-center sm:flex-row sm:justify-between sm:px-10 sm:text-left">
+          <div>
+            <h2 className="font-display text-2xl sm:text-3xl">함께 놀이를 만들고 싶다면</h2>
+            <p className="mt-2 text-navy-soft">교육 현장 도입, 협업, 제휴 등 무엇이든 편하게 메일 주세요.</p>
+          </div>
+          <a
+            href={`mailto:${site.email}`}
+            className="sticker shrink-0 bg-yellow px-6 py-3 font-bold break-all transition hover:-translate-y-0.5"
+          >
+            ✉ {site.email}
+          </a>
+        </div>
       </section>
     </>
   );

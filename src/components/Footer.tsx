@@ -37,6 +37,11 @@ export default function Footer() {
                 회사 소개
               </Link>
             </li>
+            <li>
+              <a href={`mailto:${site.email}`} className="hover:text-white">
+                문의 · {site.email}
+              </a>
+            </li>
           </ul>
         </div>
       </div>

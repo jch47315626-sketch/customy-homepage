@@ -4,6 +4,7 @@ export const site = {
   tagline: "놀다 보면 자라는, 나만의 게임",
   description:
     "커스토미(Customy)는 앱 · 보드게임 · 교육 게임을 만드는 회사입니다. 재미가 먼저, 배움은 자연스럽게.",
+  email: "jch47315626@gmail.com",
 };
 
 export const nav = [
