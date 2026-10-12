@@ -42,4 +42,4 @@
 - 개발일지
 - 영어 버전
 - 마스코트 이름 정하기
-- 도메인 연결 후 metadataBase 설정
+- 도메인 연결 시 src/data/site.ts 의 url 교체

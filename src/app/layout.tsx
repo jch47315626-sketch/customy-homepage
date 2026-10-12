@@ -8,6 +8,7 @@ import "./globals.css";
 const jua = Jua({ weight: "400", subsets: ["latin"], variable: "--font-jua", display: "swap" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: {
     default: `${site.name} ${site.nameEn} — ${site.tagline}`,
     template: `%s | ${site.name} ${site.nameEn}`,

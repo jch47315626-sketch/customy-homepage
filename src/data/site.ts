@@ -1,4 +1,6 @@
 export const site = {
+  // 도메인을 연결하면 이 주소만 바꾸면 된다 (링크 미리보기 이미지 주소에 쓰임)
+  url: "https://customy-homepage.jch47315626.workers.dev",
   name: "커스토미",
   nameEn: "Customy",
   tagline: "놀다 보면 자라는, 나만의 게임",
